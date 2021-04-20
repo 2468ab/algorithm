@@ -37,7 +37,7 @@ int main(void) {
 			int dx = (p[i].first - p[j].first);
 			int dy = (p[i].second - p[j].second);
 			int r = dx * dx + dy * dy;
-			if (r > c) {
+			if (r >= c) {
 				a.push_back({ i,j,r });
 			}
 		}
